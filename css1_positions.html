@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      h3 {
+        background-color: bisque;
+        display: inline;
+        border: 2px solid black;
+        display: hidden;
+      }
+
+      span{
+        background-color: aqua;
+        display: inline-block;
+        border:2px solid black;
+        visibility: visible;
+        opacity: 0.5;
+        
+      }
+
+      .displaynone{
+        display: none;
+      }
+
+      .visibilityhidden{
+        visibility: hidden;
+      }
+
+      .opacityzero{
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- layouts 
+
+      1. inline elemnt
+      2. block elemts
+
+      normal flow kya h in dono ka:
+
+      1. inline jitna content h utna jagah lega 
+      2. ek pura line/block lega 
+    
+    # Display, Visibility & opacity
+
+    Display
+    1. block - takes full width; we can set height and width
+    2. Inline- takes width of ontent; we can not set height and width here
+    3. Inline Block
+    4. None
+
+    visibilty
+    1. visible - default hota h
+    2. hidden - text hiiden ho jaega 
+    3. collapse 
+
+        display property ka use karke table bhi create kiya ja skta h
+        display: table
+        display: table-row
+        display: table-cell
+
+    Opacity- color fika aur dark karna ke kaam aata h
+
+    imp ques
+
+    diff between display none vs visibilty hidden
+
+
+    -->
+    <div>
+      <h3>Hello There <span>How are you</span></h3>
+    </div>
+
+    <!--diff between display none vs visibilty hidden vs opacity = zero
+    
+    1. display none - element delete ho gya gya, koi space nhi lega, check kar skte h inspect se
+    2. visibility hidden and opacity wale space lenge 
+
+
+        Property	        Element Visible?	       Takes up Space?	    Clickable/Interactive?
+        display: none	    ❌ No	                    ❌ No	                ❌ No
+        visibility: hidden	❌ No	                    ✅ Yes	                ❌ No
+        opacity: 0	        ❌ No (fully transparent)	✅ Yes                  	✅ Yes
+
+    -->
+
+    <div class="displaynone">
+        <h2>Hello first 1 paragargh</h2>
+    </div>
+
+    <div class="visibilityhidden">
+        <h2>Hello second paragraph</h2>
+    </div>
+
+    <div class="opacityzero">
+        <h2>Hello third paragraph</h2>
+    </div>
+  </body>
+</html>
